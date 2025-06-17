@@ -1,0 +1,41 @@
+{
+    "Details": {
+        "ContactData": {
+            "Attributes": {
+               "EnteredPhoneNumber": "+12227459427",
+               "CustomerName":"Micahel",
+               "CustomerIntent":"CheckBalance"
+              },
+              
+            "Channel": "VOICE",
+            "ContactId": "4a573372-1f28-4e26-b97b-3b1a3c88d2b4",
+            "CustomerEndpoint": {
+                "Address": "+1227459427",
+                "Type": "TELEPHONE_NUMBER"
+            },
+            "CustomerId": "customer-001",
+            "Description": "ChecKbalance",
+            "InitialContactId": "4a573372-1f28-4e26-b97b-3b1a3c88d2b4",
+            "InitiationMethod": "INBOUND",
+            "InstanceARN": "arn:aws:connect:us-east-1:289098895912:instance/35094bf8-d1bc-4c0b-ba45-fb0d782d9a00/contact-flow/dd081e2c-7ad8-4756-9803-958f79d3f34e",
+            "LanguageCode": "en-US",
+            "MediaStreams": {
+                "Customer": {
+                    "Audio": {
+                        "StreamARN": "arn:aws:kinesisvideo:us-east-1:123456789012:stream/your-stream-name/1700000000000",
+                        "StartTimestamp": "1571360125131", 
+                        "StopTimestamp": "1571360126131",
+                        "StartFragmentNumber": "100" 
+                    }
+                }
+            }
+        },
+        "Parameters": {"CustomerName": "Micahel",
+               "CustomerNumber": "+1227459427"
+        },
+    
+    "Name": "ContactFlowEvent"
+    
+ }
+}
+    
