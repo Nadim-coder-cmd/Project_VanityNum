@@ -1,6 +1,19 @@
 # Project_VanityNum
 Java AWS Lambda for Amazon Connect. On incoming call, generates all vanity number permutations from caller's phone number using recursion. Filters top 5 based on vowel count and dictionary word matches, stores in DynamoDB, and returns the top 3 most memorable suggestions. 
 
+## File_Paths
+
+## main lambda function
+- Project_vanity_number\src\Java\aws-lambda\BestVanityNumber.java
+
+## test_files (runs tests on 5 different input phone numbers, and provides two different ouputs to compare results between sorting based soley on vowels vs sorting based on both factors (vowels/real english word))
+
+- Project_vanity_number\src\Java\test\TestVanityNumbers.java
+
+## Contact_flow (arbitrary data)
+
+- Project_vanity_number\ConnectEvent\ContactFlow.json
+
 # Base requirements
 - Java 21
 - Apaache maven (to integrate integrate/enable aws services dependencies)
@@ -24,3 +37,15 @@ While this works for shorter numbers, I recognize it doesn't scale efficiently. 
 - API Gateway and IAM policy hardening: I'd define a proper REST interface, restrict permissions to least privilege, and enforce security best practices across resources.
 - Unit tests and CI/CD pipeline: I’d set up automated testing using JUnit and a GitHub Actions or CodePipeline workflow to ensure safety with each change
 - I’d improve error handling around DynamoDB writes and dictionary loading to gracefully fail and notify downstream systems if needed.
+
+
+## ContactFlow (link/access credentials)
+
+https://bestvanitynum.my.connect.aws
+
+aacess credentials:
+
+username: abd_patel999
+password: 123Connect!
+
+saved as test_flow

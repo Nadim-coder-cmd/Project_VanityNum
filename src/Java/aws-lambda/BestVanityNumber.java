@@ -28,6 +28,8 @@ import com.amazonaws.services.lambda.runtime.events.ConnectEvent;
 
 public class BestVanityNumber implements RequestHandler <ConnectEvent, ConnectResponse>{
     //Mapping Digits to Characters:
+    
+    private static final int MAX_SIZE=500;
     private static final Map<Character, String> DIGIT_TO_CHARS = new HashMap<>();
 static {
    DIGIT_TO_CHARS.put('2', "ABC");
@@ -113,6 +115,11 @@ At each step of the recursion, the function appends characters corresponding to 
 After the recursive call, the appended character is removed from the current string to backtrack and explore other possibilities.
  */
     private void generateVanityNumbers(String phoneNumber, int index, StringBuilder current, List<String> results) {
+        
+        if(results.size()==MAX_SIZE){
+            return;
+        }; //prevent early memory bloat/overload    
+        
         if (index == phoneNumber.length()) {
             results.add(prepend(current.toString()));
             return;
