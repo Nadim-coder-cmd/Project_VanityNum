@@ -6,12 +6,11 @@ Java AWS Lambda for Amazon Connect. On incoming call, generates all vanity numbe
 ## main lambda function
 - Project_vanity_number\src\Java\aws-lambda\BestVanityNumber.java
 
-## test_files (runs tests on 5 different input phone numbers, and provides two different ouputs to compare results between sorting based soley on vowels vs sorting based on both factors (vowels/real english word))
-
+## test_files 
 - Project_vanity_number\src\Java\test\TestVanityNumbers.java
+(runs tests on 5 different input phone numbers, and provides two different ouputs to compare results between sorting based soley on vowels vs sorting based on both factors (vowels/real english word))
 
 ## Contact_flow (arbitrary data)
-
 - Project_vanity_number\ConnectEvent\ContactFlow.json
 
 # Base requirements
