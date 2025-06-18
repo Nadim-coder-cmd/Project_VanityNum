@@ -42,9 +42,4 @@ While this works for shorter numbers, I recognize it doesn't scale efficiently. 
 
 https://bestvanitynum.my.connect.aws
 
-aacess credentials:
 
-username: abd_patel999
-password: 123Connect!
-
-saved as test_flow
